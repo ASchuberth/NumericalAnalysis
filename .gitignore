@@ -30,3 +30,19 @@
 *.exe
 *.out
 *.app
+
+# Other
+*.json
+*.sqlite
+*.db*
+*.VC*
+*.sln
+*.vcx*
+*.suo
+*.tlog
+*.ifc*
+*.recipe
+*.ilk
+*.idb
+*.pdb
+*.log
