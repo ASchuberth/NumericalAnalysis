@@ -1,2 +1,3 @@
 # NumericalAnalysis
-Algorithms from a textbook used in a course
+Algorithms from a textbook used in a course using modules
+
