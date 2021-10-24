@@ -1,7 +1,12 @@
+#include <fstream>
+#include <stdio.h>
+
+
+import <vector>;
+import <string>;
 import <iostream>;
 import <math.h>;
 import NumAnalysis;
-
 
 
 double f(double x) {
@@ -13,11 +18,8 @@ double f(double x) {
 int main() {
 
 
+	std::cout << bisection(&f, -10, -1, 0.0001, 5000) << std::endl;
 
-	std::cout << bisection(&f, -10, 0, 0.0001, 5000) << std::endl;
-
-
-	//std::cout << f(-1.59268) << std::endl;
 
 	return 0;
 }

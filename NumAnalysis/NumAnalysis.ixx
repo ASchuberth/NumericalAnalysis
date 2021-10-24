@@ -1,5 +1,7 @@
-
 export module NumAnalysis;
+
+// IMPORTS
+
 import <iostream>;
 
 // INTERFACE
@@ -15,14 +17,27 @@ export double bisection(double (*func)(double), double a, double b, double TOL,
 // IMPLEMENTATION
 // 
 // Public
+
+// Root Finding
+
+// Bisection Method
+// Input: 
+// Continuous function, f(x)
+// Start and end points of interval, a and b
+// Tolerance
 double bisection(double (*func)(double), double a, double b, double TOL, 
 	                    int MaxIter) {
 
-	double result = 0.0;
-
 	// Step 1
 	double FA = func(a);
-	
+	double FB = func(b);
+
+	if (FA * FB > 0) {
+		
+		std::cout << "Error: f(a) and f(b) need opposite signs!" << std::endl;
+		return -1;
+	}
+
 	// Step 2
 	for (int i = 0; i <= MaxIter; i++) {
 
@@ -55,3 +70,5 @@ double bisection(double (*func)(double), double a, double b, double TOL,
 
 }
 
+
+// Interpolating

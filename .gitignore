@@ -46,3 +46,7 @@
 *.idb
 *.pdb
 *.log
+*.ipch
+*.config
+*/packages/*
+/NumAnalysis/data.tmp
